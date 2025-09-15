@@ -1,0 +1,44 @@
+# Core ML
+torch>=2.0.0
+torchvision
+torchaudio
+vllm>=0.2.0
+transformers>=4.30.0
+accelerate
+bitsandbytes
+
+# RAG Components
+qdrant-client>=1.6.0
+llama-index>=0.9.0
+sentence-transformers>=2.2.0
+
+# Document Processing
+unstructured[all-docs]>=0.10.0
+PyMuPDF>=1.23.0
+python-docx>=0.8.11
+python-pptx>=0.6.21
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+pandas>=2.0.0
+mammoth>=1.6.0
+python-magic>=0.4.27
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# Russian Language
+pymorphy3>=1.2.0
+razdel>=0.5.0
+nltk>=3.8.0
+natasha>=1.6.0
+
+# Web Framework
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+streamlit>=1.25.0
+aiofiles>=23.0.0
+python-multipart>=0.0.6
+
+# Utilities
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+asyncio-throttle>=1.0.2
