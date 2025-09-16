@@ -11,12 +11,22 @@ class Settings:
     LOGS_DIR = PROJECT_ROOT / "logs"
     
     # Model settings
-    LLM_MODEL = "deepseek-ai/DeepSeek-V3-Base"
+    LLM_MODEL = "deepseek-r1:14b"
     EMBEDDING_MODEL = "nomic-ai/nomic-embed-text-v1.5"
     
-    # GPU settings
-    TENSOR_PARALLEL_SIZE = 2
-    GPU_MEMORY_UTILIZATION = 0.85
+    # LLM Configuration
+    LLM_TEMPERATURE = 0.7
+    LLM_TOP_P = 0.9
+    LLM_MAX_TOKENS = 2000
+    LLM_TIMEOUT = 120
+    LLM_MAX_RETRIES = 3
+    
+    # Ollama settings
+    OLLAMA_URL = "http://localhost:11434"
+    
+    # GPU settings (для embeddings)
+    TENSOR_PARALLEL_SIZE = 1
+    GPU_MEMORY_UTILIZATION = 0.8
     MAX_MODEL_LEN = 4096
     
     # Vector database
